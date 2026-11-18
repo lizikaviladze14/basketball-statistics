@@ -11,13 +11,13 @@ class Googling(webdriver.Chrome):
 
     # object takes as parameter the selenium chrome driver path
     # with-as idan gamosvlis shemdeg browser-is daxurvis tanxmobas
-    def __init__(self, driver_path="C:\\Users\\admin\Desktop\\Selenium\\chromedriver.exe", teardown=True):
+    def __init__(self, teardown=True):
         self.teardown = teardown # if true browseri daixureba yvelafris gaketebis mere
         # web driver lang = english
         lang_eng = webdriver.ChromeOptions()
         lang_eng.add_argument("--lang=en-ca")
         # web driver connect
-        super().__init__(executable_path=driver_path, options=lang_eng)
+        super().__init__(options=lang_eng)
 
     def __exit__(self, exc_type, exc_val, exc_tb):
         if self.teardown:

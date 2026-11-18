@@ -6,7 +6,8 @@ import requests
 # აბრუნებს ასეთი ტაპლების ლისტს: ('წელი', 'გუნდი')
 def mvp():
     try:
-        html_text = requests.get('http://www.espn.com/nba/history/awards/_/id/33').text
+        # html_text = requests.get('http://www.espn.com/nba/history/awards/_/id/33').text
+        html_text = requests.get('http://www.espn.com/nba/history/awards/_/id/33', headers={'User-Agent': 'Mozilla/5.0'}).text
         soup = BeautifulSoup(html_text, 'lxml')
         rows = soup.find_all('tr', class_='oddrow')
         tds_in_row = [row.find_all('td') for row in rows]
