@@ -38,6 +38,6 @@ This project relies on web scraping from basketball-reference.com, ESPN and Goog
 ## Authors
 Joint university project by [Lizi Kaviladze](https://github.com/lizikaviladze14) and [Andria Inasaridze](https://github.com/andriainasaridze), 2022.
 
-**Lizi Kaviladze's contribution:** team-statistics pipeline (MVP scraping, SQLite storage, pandas analysis, team charts) and the main GUI integration.
+**My contribution:** team-statistics pipeline (MVP scraping, SQLite storage, pandas analysis, team charts) and the main GUI integration.
 
-Originally hosted at https://github.com/andriainasaridze/Basketball_Stats
+Originally hosted at https://github.com/andriainasaridze/BasketBall_Statistics
