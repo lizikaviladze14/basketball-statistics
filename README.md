@@ -2,7 +2,9 @@
 
 Python desktop app that collects and visualises NBA player and team statistics.
 
-![App window (interface in Georgian)](docs/screenshots/app-window.png)
+<p align="center">
+  <img src="docs/screenshots/app-window.png" alt="App window (interface in Georgian)" width="380">
+</p>
 
 ## Features
 - **Player stats:** enter a player's name; a Selenium bot retrieves their per-game stats from basketball-reference.com, pandas processes them, and matplotlib shows charts (scoring, shooting, defence, playing time).
